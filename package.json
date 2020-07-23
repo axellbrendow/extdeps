@@ -1,0 +1,25 @@
+{
+  "name": "extdeps",
+  "version": "1.0.0",
+  "description": "Extract dependencies and devDependencies from package.json in markdown format.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axell-brendow/extdeps.git"
+  },
+  "keywords": [
+    "dependencies",
+    "package.json",
+    "markdown",
+    "readme"
+  ],
+  "author": "axell-brendow <breno.axel@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axell-brendow/extdeps/issues"
+  },
+  "homepage": "https://github.com/axell-brendow/extdeps#readme"
+}
