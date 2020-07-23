@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 async function read(stream = process.stdin) {
   const chunks = [];
   for await (const chunk of stream) chunks.push(chunk);
