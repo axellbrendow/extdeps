@@ -9,7 +9,7 @@ Extract dependencies and devDependencies from package.json in markdown format.
 
 ## Usage
 
-Pipe a package.json file or redirect a file to the script
+Pipe package.json or redirect it to the script
 
 `cat package.json | npx extdeps`
 
