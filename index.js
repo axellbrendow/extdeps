@@ -18,11 +18,15 @@ const createLibList = dependencies =>
 (async () => {
   const packageJson = JSON.parse(await read());
 
-  console.log("## Dev dependencies");
-  console.log();
-  console.log(createLibList(packageJson.devDependencies));
+  if (packageJson.devDependencies) {
+    console.log("## Dev dependencies");
+    console.log();
+    console.log(createLibList(packageJson.devDependencies));
+  }
 
-  console.log("## Dependencies");
-  console.log();
-  console.log(createLibList(packageJson.dependencies));
+  if (packageJson.dependencies) {
+    console.log("## Dependencies");
+    console.log();
+    console.log(createLibList(packageJson.dependencies));
+  }
 })();
