@@ -9,6 +9,12 @@ Extract dependencies and devDependencies from package.json in markdown format.
 
 ## Usage
 
+### First way
+
+Run `npx extdeps` from a folder that has a `package.json` file and a `README.md` file. That's it!
+
+### Second way
+
 Pipe package.json or redirect it to the script
 
 `cat package.json | npx extdeps`
