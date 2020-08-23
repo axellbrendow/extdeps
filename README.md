@@ -27,7 +27,7 @@ Example of a valid README:
 - [cross-env](https://www.npmjs.com/package/cross-env) `^7.0.2`
 ```
 
-If these sections does not exist, they will be created!
+If these sections do not exist, they will be created!
 
 ### Second way
 
