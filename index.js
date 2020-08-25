@@ -59,7 +59,7 @@ const replaceSection = (findSectionStart, newSection, readme, sectionTitle) => {
   for (let i = sectionEnd; i < readmeLines.length; i++)
     newReadme += readmeLines[i] + "\n";
 
-  return newReadme;
+  return newReadme.replace(/\n{2,}/g, "\n\n");
 };
 
 (async () => {
