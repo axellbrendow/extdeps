@@ -1,6 +1,6 @@
 {
   "name": "extdeps",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Extract dependencies and devDependencies from package.json in markdown format.",
   "main": "index.js",
   "bin": "index.js",
