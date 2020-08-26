@@ -13,9 +13,9 @@ Extract dependencies and devDependencies from package.json in markdown format.
 
 Run `npx extdeps` from a folder that has a `package.json` file and a `README.md` file. That's it!
 
-Obs.: the script identifies the start of the dev dependencies section in your README by searching for a line that starts with a '#' and has 'dev' and 'dependencies' on it. Also, same logic for dependencies section.
+Obs.: the script identifies the start of the dev dependencies section in your README by searching for a line that starts with a '#' and has 'dev' and ('dependencies' or 'libraries') on it. Also, same logic for dependencies section.
 
-Example of a valid README:
+Example1 of a valid README:
 
 ```
 ## Dev dependencies
@@ -23,6 +23,18 @@ Example of a valid README:
 - [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) `^7.10.4`
 
 ## Dependencies
+
+- [cross-env](https://www.npmjs.com/package/cross-env) `^7.0.2`
+```
+
+Example2 of a valid README:
+
+```
+## Dev libraries
+
+- [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env) `^7.10.4`
+
+## Libraries
 
 - [cross-env](https://www.npmjs.com/package/cross-env) `^7.0.2`
 ```
