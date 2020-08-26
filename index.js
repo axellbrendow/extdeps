@@ -109,7 +109,8 @@ const replaceSection = (findSectionStart, newSection, readme, sectionTitle) => {
       if (packageJson.dependencies) {
         newReadme = replaceSection(
           line =>
-            /^#((?!dev).)*dependencie/i.test(line) || /^#.*librar/i.test(line),
+            /^#((?!dev).)*dependencie/i.test(line) ||
+            /^#((?!dev).)*librar/i.test(line),
           createLibList(packageJson.dependencies),
           newReadme,
           "## Dependencies"
